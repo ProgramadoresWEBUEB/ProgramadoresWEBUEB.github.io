@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a programar con nosotros</title>
+    <link rel="shortcut icon" href="./images/logo_br.png-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende a programar en HTML">
+</head>
+
+<body>
+
+    <header class="hero4">
+        <nav class="nav container">
+            <div class="nav__logo">
+                
+                <h2 class="nav__title"><img class="nav__title" src="./images/logo_br.png-removebg-preview.png" width="60 px"/>   Programador Web </h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="Inicion.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca de.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="curriculum.html" class="nav__links">Curriculum</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Modulo formativo "Diseño web"</h1>
+
+            <h2 class="hero__paragraph">Fundamentos HTML</h2>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Estructura básica de HTML</h2>
+            <p class="about__paragraph">HTML (HyperText Markup Language) es el lenguaje fundamental para la creación de páginas web. Comprender su estructura básica es esencial para construir documentos bien organizados y funcionales. A continuación, exploraremos los principales elementos que componen un documento HTML.</p>
+                <h3 class="about__title">1. Declaración del Tipo de Documento</h3>
+                <p class="about__paragrah">Cada archivo HTML debe comenzar con una declaración de tipo de documento (DOCTYPE), que le indica al navegador que está interpretando un documento HTML: 
+                </p>
+                <pre class="codeBox"><code><span class="codeGreen"><span><</span>!DOCTYPE html<span class="code">></span></span></code></pre>
+                <p class="about__paragrah">Esto asegura que el navegador renderice el documento de acuerdo con los estándares modernos de HTML5.
+                </p>
+                <h3 class="about__title">2. La Estructura General de un Documento HTML</h3>
+                <p class="about__paragrah">Un archivo HTML está organizado en varias secciones principales:
+                </p>
+            </p>
+            <pre class="codeBox"><code><span class="codeGreen"><span><</span>!DOCTYPE html<span class="code">></span></span> <br><span><</span><span class="codeBlue">html </span><span class="codeCyan">lang</span>=<span class="codeOr">"es"</span>> <br><span><</span><span class="codeBlue">head </span>> <br><span>  <</span><span class="codeBlue">meta </span><span class="codeCyan">charset</span>=<span class="codeOr">"UTF-8"</span>> <br><span>  <</span><span class="codeBlue">meta </span><span class="codeCyan">http-equiv</span>=<span class="codeOr">"X-UA-Compatible"</span><span class="codeCyan">content</span>=<span class="codeOr">"IE=edge"</span>> <br><span>  <</span><span class="codeBlue">meta </span><span class="codeCyan">name</span>=<span class="codeOr">"viewport"</span><span class="codeCyan">content</span>=<span class="codeOr">"width=device-width, initial-scale=1.0"</span>> <br><span>  <</span><span class="codeBlue">title</span>> <span class="codeWhy">Ejemplo</span><span> <</span>/<span class="codeBlue">title</span>> <br><span><</span>/<span class="codeBlue">head</span>> <br><span><</span><span class="codeBlue">body</span>> <br><span>  <</span><span class="codeBlue">h1</span>> Un clasico ejemplo <span><</span>/<span class="codeBlue">h1</span>> <br><span>  <</span><span class="codeBlue">p</span>> Hola Mundo <span><</span>/<span class="codeBlue">p</span>> <br><span><</span>/<span class="codeBlue">body</span>> <br><span><</span>/<span class="codeBlue">html</span>> <br></code></pre>
+            <p class="about__paragrah">A continuación hablaremos acerca de cada parte de esta estructura
+            </p>
+            <h3 class="about__title">3. Etiqueta <span><</span>html></h3>
+                <p class="about__paragrah">Toda la página web se encuentra dentro de la etiqueta <html>. El atributo lang especifica el idioma principal del documento, en este caso, español (es).
+                </p>
+            <h3 class="about__title">3. El header o head<span><</span>head></h3>
+                <p class="about__paragrah">La sección <head> contiene metadatos y enlaces a recursos externos, como hojas de estilo o scripts. Algunos elementos importantes dentro de <head> son:
+                <ul>
+                    <li>
+                        <span><</span><span class="codeBlue">meta </span><span class="codeCyan">charset</span>=<span class="codeOr">"UTF-8"</span>> : Define la codificación de caracteres como UTF-8, lo que permite el uso de caracteres especiales. 
+                    </li>
+                    <li>
+                        <span><</span><span class="codeBlue">meta </span><span class="codeCyan">name</span>=<span class="codeOr">"viewport"</span><span class="codeCyan">content</span>=<span class="codeOr">"width=device-width, initial-scale=1.0"</span>>: Garantiza una correcta visualización en dispositivos móviles.
+                    </li>
+                    <li>
+                        <span><</span><span class="codeBlue">title</span>>:Define el título de la página, que aparece en la pestaña del navegador.
+                    </li>
+                </ul>
+                </p>
+            <h3 class="about__title">4. Cuerpo o body <span><</span>body></h3>
+                <p class="about__paragrah">La sección <span><</span>body> contiene el contenido visible de la página, como texto, imágenes, vídeos y formularios. Dentro del <span><</span>body> podemos incluir:
+                <ul>
+                    <li>
+                       <h4>Encabezados:</h4>  <span><</span>h1> a <span><</span>h6> para estructurar jerárquicamente el contenido.
+                    </li>
+                    <li>
+                        <h4>Párrafos:</h4>  <span><</span>p> para definir bloques de texto.
+                    </li>
+                    <li>
+                        <h4>Listas:</h4>  <span><</span>ul> (lista desordenada) y <span><</span>ol> (lista ordenada) con elementos <span><</span>li>(viñetas).
+                    </li>
+                    <li>
+                        <h4>Imágenes:</h4>  <span><</span>img src="URL" width="Descripción"> para insertar gráficos.
+                    </li>
+                </ul>
+                </p>
+            <p class="about__paragraph">Conocer la estructura básica de un documento HTML es el primer paso para el desarrollo web. A partir de esta base, se pueden agregar estilos con CSS y funcionalidades interactivas con JavaScript para mejorar la experiencia del usuario.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso JS</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acerca de.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Usuario (2).pdf" class="nav__links">Manual de Usuario</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Instalación.pdf" class="nav__links">Manual de Instalación</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">Derechos reservados &copy; Briander leon, Santiago Vera, Ruth Tixi</h3>
+        </section>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

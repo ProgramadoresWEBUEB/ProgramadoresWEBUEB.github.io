@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a programar con nosotros</title>
+    <link rel="shortcut icon" href="./images/logo_br.png-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende a programar en HTML">
+</head>
+
+<body>
+
+    <header class="hero5">
+        <nav class="nav container">
+            <div class="nav__logo">
+                
+                <h2 class="nav__title"><img class="nav__title" src="./images/logo_br.png-removebg-preview.png" width="60 px"/>   Programador Web </h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="Inicion.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca de.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="curriculum.html" class="nav__links">Curriculum</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Modulo formativo "Diseño web"</h1>
+
+            <p class="hero__paragraph">Elije la figura profesional de informatica para poder aprender sobre el 
+                diseño web .</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Operadores Básicos en JavaScript</h2>
+            <p class="about__paragraph">Los operadores en JavaScript son símbolos que permiten realizar cálculos, comparaciones y operaciones lógicas. Son fundamentales para manipular datos y controlar el flujo de un programa. Hoy veremos algunos de ellos.</p>
+                <h3 class="about__title">Operaciónes Aritméticas</h3>
+                <p class="about__paragrah">Los operadores aritméticos permiten realizar operaciones matemáticas básicas en variables y expresiones
+                    <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">suma</span> = <span class="codeGreen">10</span> + <span class="codeGreen">8</span>;<br><span class="codeBlue">let</span> <span class="codeCyan">resta</span> = <span class="codeGreen">21</span> - <span class="codeGreen">5</span>;<br><span class="codeBlue">let</span> <span class="codeCyan">multiplicacion</span> = <span class="codeGreen">3</span> * <span class="codeGreen">6</span>;<br><span class="codeBlue">let</span> <span class="codeCyan">division</span> = <span class="codeGreen">36</span> / <span class="codeGreen">6</span>;</code></pre>
+                </p>
+                <h3 class="about__title">Operaciónes Lógicos</h3>
+                <p class="about__paragrah">Los operadores lógicos permiten combinar condiciones para realizar comparaciones más avanzadas.
+                    <ul>
+                        <li>
+                            <b>&& (AND):</b> Devuelve true si ambas condiciones son verdaderas.
+                        </li>
+                        <li>
+                            <b>|| (OR):</b> Devuelve true si al menos una condición es verdadera. 
+                        </li>
+                        <li>
+                            <b>! (NOT):</b> Invierte el valor de la condición.
+                        </li>
+                    </ul>
+                    <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">a</span> = <span class="codeBlue">true</span>;<br><span class="codeBlue">let</span> <span class="codeCyan">b</span> = <span class="codeBlue">false</span>;<br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(a</span> && <span class="codeCyan">b)</span>;   <span class="codeGreen">//false</span><br><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(a</span> || <span class="codeCyan">b)</span>;   <span class="codeGreen">//true</span><br><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span>!<span class="codeCyan">a)</span>;   <span class="codeGreen">//false</span><br></code></pre>
+                <h3 class="about__title">Operaciónes de incremento y decremento</h3>
+                <p class="about__paragrah">Estos operadores permiten aumentar o disminuir el valor de una variable en 1. Usado generalmente en ciclos repetitivos.
+                    <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">contador</span> = <span class="codeGreen">5</span>;<br><span class="codeCyan">contador</span>++;    <span class="codeGreen">//6</span><br><span class="codeCyan">contador</span>--;   <span class="codeGreen">//4</span></code></pre>
+                </p> 
+                <h3 class="about__title">Operadores de Comparación</h3> 
+                <p class="about__paragrah">Los operadores de comparación se utilizan para evaluar condiciones y devuelven true o false. <br>
+                    <pre class="codeBox"><code><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(5</span> == <span>"5")</span>;     <span class="codeGreen">//Compara ignorando el tipo</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(5</span> == <span>"5")</span>;     <span class="codeGreen">//Compara ignorando el tipo</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(5</span> === <span>"5")</span>;     <span class="codeGreen">//Compara el valor y el tipo </span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(10</span> =! <span>"5")</span>;     <span class="codeGreen">//Diferente en valor</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(10</span> !== <span>"5")</span>;     <span class="codeGreen">//Diferente en valor y tipo</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(5</span> > <span>3)</span>;     <span class="codeGreen">//true(mayor que, tambien existe el mayor o igual que ">=" que incluye el valor comparado )</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(5</span> < <span>7)</span>;     <span class="codeGreen">//true(menor que, tambien existe el menor o igual que "<=" que incluye el valor comparado)</span><br></code></pre>
+                </p>  
+                <p class="about__paragrah">Los operadores en JavaScript son herramientas esenciales para realizar cálculos, comparar valores y manejar condiciones. Entender cómo funcionan es clave para escribir código eficiente y lógico. </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso JS</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acerca de.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Usuario (2).pdf" class="nav__links">Manual de Usuario</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Instalación.pdf" class="nav__links">Manual de Instalación</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">Derechos reservados &copy; Briander leon, Santiago Vera, Ruth Tixi</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

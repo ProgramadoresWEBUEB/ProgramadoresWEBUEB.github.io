@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a programar con nosotros</title>
+    <link rel="shortcut icon" href="./images/logo_br.png-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende a programar en HTML">
+</head>
+
+<body>
+
+    <header class="hero5">
+        <nav class="nav container">
+            <div class="nav__logo">
+                
+                <h2 class="nav__title"><img class="nav__title" src="./images/logo_br.png-removebg-preview.png" width="60 px"/>   Programador Web </h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="Inicion.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca de.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="curriculum.html" class="nav__links">Curriculum</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Modulo formativo "Diseño web"</h1>
+
+            <p class="hero__paragraph">Elije la figura profesional de informatica para poder aprender sobre el 
+                diseño web .</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Sentencias Condicionales En JavaScript</h2>
+            <p class="about__paragraph">Las estructuras condicionales en JavaScript permiten ejecutar diferentes bloques de código dependiendo de ciertas condiciones. Estas estructuras son fundamentales para la toma de decisiones en los programas.</p>
+                <h3 class="about__title">Sentencia IF</h3>
+                <p class="about__paragrah">La estructura if evalúa una condición y ejecuta un bloque de código si esta es verdadera. Si la condición es falsa, el bloque de else (si existe) se ejecutará en su lugar.
+                    Este tipo de sentencia se divide en 3 tipos:
+                    <ul>
+                        <li>
+                            <h4>
+                                Sentencia Condicional Simple
+                            </h4>
+                            <p class="about__paragrah">Una sentencia condicional simple es una estructura que permite que un programa tome decisiones basadas en una condición. </p>
+                            <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">edad</span> = <span class="codeGreen">18</span>; <br><span class="codePurple">if</span> <span class="codeCyan">(edad </span> <= <span class="codeGreen">18</span><span class="codeCyan">)   {</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Eres mayor de 18"</span><span class="codeCyan">)</span>;<span class="codeCyan">}</span></code></pre>
+                        </li>
+                        <li>
+                            <h4>
+                                Sentencia Condicional Compuesta
+                            </h4>
+                            <p class="about__paragrah">Una sentencia condicional compuesta es una estructura de control que permite evaluar dos o más condiciones en una misma sentencia. </p>
+                            <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">edad</span> = <span class="codeGreen">18</span>; <br><span class="codePurple">if</span> <span class="codeCyan">(edad </span> <= <span class="codeGreen">18</span><span class="codeCyan">)   {</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Eres mayor de 18"</span><span class="codeCyan">)</span>;<span class="codeCyan">}</span><br><span class="codePurple">else</span><span class="codeCyan">{</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Eres menor de 18"</span><span class="codeCyan">)</span>;<span class="codeCyan">}</span><br></code></pre>
+                        </li>
+                        <li>
+                            <h4>
+                                Sentencia Condicional Anidada
+                            </h4>
+                            <p class="about__paragrah">Una sentencia condicional anidada es una sentencia condicional que está dentro de otra sentencia condicional. Esto permite evaluar varias condiciones y tomar decisiones más complejas. </p>
+                            <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">edad</span> = <span class="codeGreen">18</span>; <br><span class="codePurple">if</span> <span class="codeCyan">(edad </span> <= <span class="codeGreen">18</span><span class="codeCyan">)   {</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Eres mayor de 18"</span><span class="codeCyan">)</span>;<span class="codeCyan">}</span><br><span class="codePurple">else if </span><span class="codeCyan">(edad</span>><span class="codeGreen">100</span><span class="codeCyan">)     {</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"TUTANKAMON!"</span><span class="codeCyan">)</span><br><span class="codePurple">else </span><span class="codeCyan">{</span><br><span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Eres menor de 18"</span><span class="codeCyan">)</span>;<span class="codeCyan">}</span><br></code></pre>
+                        </li>
+                    </ul> 
+                </p>
+                <h3 class="about__title">Sentencia switch</h3>
+                <p class="about__paragrah">También conocida como Sentencia Condicional Múltiple, el switch es una alternativa más ordenada que múltiples if.
+                    <pre class="codeBox"><code><span class="codeBlue">let</span> <span class="codeCyan">dia</span> = <span class="codeOr">"lunes"</span>; <br><span class="codePurple">switch</span> <span class="codeCyan">(dia)</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">case</span> <span class="codeOr">"lunes"</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Inicio de la semana"</span><span class="codeCyan">)</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">break</span>;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">case</span> <span class="codeOr">"viernes"</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Fin de la semana"</span><span class="codeCyan">)</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">break</span>;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">case</span> <span class="codeOr">"sábado"</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">case</span> <span class="codeOr">"domingo"</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Es fin de semana"</span><span class="codeCyan">)</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">break</span>;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="codePurple">default</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codeCyan">console</span>.<span class="codeYel">log</span><span class="codeCyan">(</span><span class="codeOr">"Día normal"</span><span class="codeCyan">)</span>;<br>}</code></pre> 
+                </p>
+                <p class="about__paragrah">Las estructuras condicionales en JavaScript permiten ejecutar diferentes bloques de código según ciertas condiciones. Aprender a utilizarlas correctamente mejora la eficiencia y claridad del código. </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso JS</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acerca de.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Usuario (2).pdf" class="nav__links">Manual de Usuario</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Instalación.pdf" class="nav__links">Manual de Instalación</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">Derechos reservados &copy; Briander leon, Santiago Vera, Ruth Tixi</h3>
+        </section>
+    </footer>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende a programar con nosotros</title>
+    <link rel="shortcut icon" href="./images/logo_br.png-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="Aprende a programar en HTML">
+</head>
+
+<body>
+
+    <header class="hero4">
+        <nav class="nav container">
+            <div class="nav__logo">
+                
+                <h2 class="nav__title"><img class="nav__title" src="./images/logo_br.png-removebg-preview.png" width="60 px"/>   Programador Web </h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="Inicion.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca de.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="curriculum.html" class="nav__links">Curriculum</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.html" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Modulo formativo "Diseño web"</h1>
+
+            <h2 class="hero__paragraph">Fundamentos HTML</h2>        </section>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Conexiones HTML a CSS y JS</h2>
+            <p class="about__paragraph">HTML por sí solo nos permite estructurar una página web, pero para hacerla visualmente atractiva y funcional, necesitamos integrar CSS para los estilos y JavaScript para la interactividad.</p>
+                <h3 class="about__title">1. ¿Qué rol desempeñan?</h3>
+                <p class="about__paragrah">
+                    <ul>
+                        <li>
+                            <b>HTML (HyperText Markup Language):</b> Define la estructura del contenido.
+                        </li>
+                        <li>
+                            <b>CSS (Cascading Style Sheets):</b> Agrega estilos y diseño.
+                        </li>
+                        <li>
+                            <b>JavaScript:</b> Añade interactividad y lógica.
+                        </li>
+                    </ul>
+                </p>
+                <h3 class="about__title">2. ¿Cómo integrar CSS a tu página HTML?</h3>
+                <p class="about__paragrah">
+                    Hay bastantes formas de hacerlo pero nosotros te hablaremos de 2:
+                    <ul>
+                        <li>
+                            <h4>Dentro de una línea</h4>
+                            Se usa el atributo style directamente en una etiqueta HTML.
+                            <pre class="codeBox"><code><span><</span><span class="codeBlue">p </span><span class="codeCyan">style</span>=<span class="codeOr">"color: blue; font-size: 18px;"</span>><span class="codeWhy">Este texto es azul :D.</span><span><</span>/<span class="codeBlue">p</span>></code></pre>
+                        </li>
+                        <li>
+                            <h4>Externo</h4>
+                            Se recomienda enlazar una hoja de estilos separada con <span><</span>link>.
+                            <pre class="codeBox"><code><span><</span><span class="codeBlue">head</span>><br><span><</span><span class="codeBlue">link </span><span class="codeCyan">rel</span>=<span class="codeOr">"stylesheet"</span><span class="codeCyan">href</span>=<span class="codeOr">"hoja.css"</span>><br><span><</span>/<span class="codeBlue">head</span>></code></pre>
+                        </li>
+                    </ul>
+                </p>
+                <h3 class="about__title">3. ¿Cómo integrar JS a tu página HTML?</h3>
+                <p class="about__paragrah">
+                    Como en CSS, hay varias formas de hacerlo pero nosotros te mostraremos las que nos parecen más sencillas:
+                    <ul>
+                        <li>
+                            <h4>Dentro de una línea</h4>
+                            Se usa el atributo onclick para manejar eventos directamente en el HTML.
+                            <pre class="codeBox"><code><span><</span><span class="codeBlue">button </span><span class="codeCyan">onclick</span>=<span class="codeOr">"alert("Hola mundo!")"</span>><span class="codeWhy">Click!</span><span><</span>/<span class="codeBlue">button</span>></code></pre>
+                        </li>
+                        <li>
+                            <h4>Externo</h4>
+                            Se recomienda enlazar una hoja de estilos separada con <span><</span>link>.
+                            <pre class="codeBox"><code><span><</span><span class="codeBlue">head</span>><br><span><</span><span class="codeBlue">script </span><span class="codeCyan">src</span>=<span class="codeOr">"funciones.js"</span>><span><</span>/<span class="codeBlue">script</span>><br><span><</span>/<span class="codeBlue">head</span>></code></pre>
+                        </li>
+                    </ul>
+                </p>
+                <p class="about__paragraph">Usar HTML, CSS y JavaScript en conjunto permite crear sitios web completos. HTML proporciona la estructura, CSS mejora la apariencia y JavaScript añade interactividad.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Curso JS</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="acerca de.html" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="contacto.html" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Usuario (2).pdf" class="nav__links">Manual de Usuario</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./manuales/Manual de Instalación.pdf" class="nav__links">Manual de Instalación</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <h3 class="footer__copyright">Derechos reservados &copy; Briander leon, Santiago Vera, Ruth Tixi</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
