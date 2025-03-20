@@ -249,8 +249,10 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.img{
+.click{
     cursor:pointer;
+}
+.img{
     -webkit-animation-name: cssAnimation;
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
