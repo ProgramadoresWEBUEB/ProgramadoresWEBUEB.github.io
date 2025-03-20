@@ -15,3 +15,6 @@
 
 
 })();
+function ani() {
+  document.getElementById('img').className = 'img';
+}
